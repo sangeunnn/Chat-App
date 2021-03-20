@@ -10,7 +10,7 @@ function App() {
     
      </h1> 
      <body>
-     <Chat/>
+        <Chat/>
      </body>
     </div>
   );

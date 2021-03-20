@@ -37,7 +37,7 @@ mutation ($user: String!, $content: String!) {
 
 const Messages = ({ user }) =>{
 const {data}= useQuery(GET_MESSAGES, {
-    pollInterval: 500,
+    pollInterval: 500, // 0.5초마다 계속 쿼리를 요청하고있음 문제가됨..
 });
 if(!data) {return null; }
 return (
